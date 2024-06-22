@@ -6,6 +6,9 @@ import AddressSelect from "../address-select"
 import CountrySelect from "../country-select"
 import { Container } from "@medusajs/ui"
 
+interface Country {
+  iso_2: string
+}
 const ShippingAddress = ({
   customer,
   cart,
@@ -34,7 +37,7 @@ const ShippingAddress = ({
   })
 
   const countriesInRegion = useMemo(
-    () => cart?.region.countries.map((c) => c.iso_2),
+    () => cart?.region.countries.map((c: Country) => c.iso_2),
     [cart?.region]
   )
 

@@ -38,6 +38,7 @@ yarn-error.log*
 .env.production
 .env.staging
 .env.test
+.env.template
 
 # vercel
 .vercel

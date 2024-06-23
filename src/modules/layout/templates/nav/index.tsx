@@ -4,6 +4,7 @@ import { listRegions } from "@lib/data"
 import LocalizedClientLink from "@modules/common/components/localized-client-link"
 import CartButton from "@modules/layout/components/cart-button"
 import SideMenu from "@modules/layout/components/side-menu"
+import Owner from "../../../../../owner-config.json"
 
 export default async function Nav() {
   const regions = await listRegions().then((regions) => regions)
@@ -24,7 +25,7 @@ export default async function Nav() {
               className="txt-compact-xlarge-plus hover:text-ui-fg-base uppercase"
               data-testid="nav-store-link"
             >
-              Medusa Store
+              {Owner.storeName}
             </LocalizedClientLink>
           </div>
 

@@ -2,7 +2,6 @@ import { Image as MedusaImage } from "@medusajs/medusa"
 import { Container, clx } from "@medusajs/ui"
 import Image from "next/image"
 import React from "react"
-
 import PlaceholderImage from "@modules/common/icons/placeholder-image"
 
 type ThumbnailProps = {
@@ -11,7 +10,7 @@ type ThumbnailProps = {
   size?: "small" | "medium" | "large" | "full" | "square"
   isFeatured?: boolean
   className?: string
-  'data-testid'?: string
+  "data-testid"?: string
 }
 
 const Thumbnail: React.FC<ThumbnailProps> = ({
@@ -20,7 +19,7 @@ const Thumbnail: React.FC<ThumbnailProps> = ({
   size = "small",
   isFeatured,
   className,
-  'data-testid': dataTestid
+  "data-testid": dataTestid,
 }) => {
   const initialImage = thumbnail || images?.[0]?.url
 

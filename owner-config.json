@@ -6,6 +6,7 @@
   "state": "KY",
   "zipCode": "42642",
   "phone": "(317) 448-2156",
+  "twitterHandle": "@birdswhistleky",
   "hours": {
     "Monday": "Closed",
     "Tuesday": "10am - 7pm",
@@ -14,5 +15,6 @@
     "Friday": "10am - 7pm",
     "Saturday": "10am - 7pm",
     "Sunday": "Closed"
-  }
+  },
+  "twitterUrl": "https://twitter.com/birdswhistleky"
 }

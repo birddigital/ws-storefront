@@ -12,6 +12,36 @@ export const metadata: Metadata = {
   title: `${Owner.storeName}`,
   description:
     "A performant frontend ecommerce starter template with Next.js 14 and Medusa.",
+  openGraph: {
+    title: `${Owner.storeName}`,
+    description:
+      "A performant frontend ecommerce starter template with Next.js 14 and Medusa.",
+    url: "https://www.birdswhistlestopshop.com",
+    siteName: `${Owner.storeName}`,
+    images: [
+      {
+        url: "https://pub-94cb652396cc4a84a6f28685d9a4ac9b.r2.dev/pool-toys.webp",
+        width: 500,
+        height: 500,
+        alt: "Pool toys",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: `${Owner.twitterHandle}`,
+    title: `${Owner.storeName}`,
+    description:
+      "Russel Springs, KY Discount Shop - Home Goods, Lawn & Garden, Toys, Candy, & Gifts",
+    images: [
+      {
+        url: "https://pub-94cb652396cc4a84a6f28685d9a4ac9b.r2.dev/pool-toys.webp",
+        alt: "Birds Whistle Stop & Shop",
+      },
+    ],
+  },
 }
 
 const getCollectionsWithProducts = cache(

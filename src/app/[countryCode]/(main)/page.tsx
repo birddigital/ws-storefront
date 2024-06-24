@@ -6,9 +6,10 @@ import FeaturedProducts from "@modules/home/components/featured-products"
 import Hero from "@modules/home/components/hero"
 import { ProductCollectionWithPreviews } from "types/global"
 import { cache } from "react"
+import Owner from "../../../../owner-config.json"
 
 export const metadata: Metadata = {
-  title: "Medusa Next.js Starter Template",
+  title: `${Owner.storeName}`,
   description:
     "A performant frontend ecommerce starter template with Next.js 14 and Medusa.",
 }

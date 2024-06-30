@@ -10,7 +10,7 @@ import {
 } from "@lib/data"
 import { Region } from "@medusajs/medusa"
 import ProductTemplate from "@modules/products/templates"
-
+import Owner from "../../../../../../owner-config.json"
 type Props = {
   params: { countryCode: string; handle: string }
 }
@@ -56,10 +56,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 
   return {
-    title: `${product.title} | Medusa Store`,
+    title: `${product.title} | ${Owner.storeName}`,
     description: `${product.title}`,
     openGraph: {
-      title: `${product.title} | Medusa Store`,
+      title: `${product.title} | ${Owner.storeName}`,
       description: `${product.title}`,
       images: product.thumbnail ? [product.thumbnail] : [],
     },

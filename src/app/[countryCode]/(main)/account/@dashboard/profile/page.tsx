@@ -8,10 +8,10 @@ import ProfilePassword from "@modules/account/components/profile-password"
 
 import { getCustomer, listRegions } from "@lib/data"
 import { notFound } from "next/navigation"
-
+import Owner from "../../../../../../../owner-config.json"
 export const metadata: Metadata = {
   title: "Profile",
-  description: "View and edit your Medusa Store profile.",
+  description: `View and edit your ${Owner.storeName} Store profile.`,
 }
 
 export default async function Profile() {

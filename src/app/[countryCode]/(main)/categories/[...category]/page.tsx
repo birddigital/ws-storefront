@@ -4,7 +4,7 @@ import { notFound } from "next/navigation"
 import { getCategoryByHandle, listCategories, listRegions } from "@lib/data"
 import CategoryTemplate from "@modules/categories/templates"
 import { SortOptions } from "@modules/store/components/refinement-list/sort-products"
-
+import Owner from "../../../../../../owner-config.json"
 type Props = {
   params: { category: string[]; countryCode: string }
   searchParams: {
@@ -53,7 +53,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       `${title} category.`
 
     return {
-      title: `${title} | Medusa Store`,
+      title: `${title} | ${Owner.storeName}`,
       description,
       alternates: {
         canonical: `${params.category.join("/")}`,
